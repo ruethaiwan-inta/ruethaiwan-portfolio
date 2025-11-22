@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Ruethaiwan Inta</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <meta name="description" content="Portfolio of Ruethaiwan Inta — Front-End developer, UX/UI, and interactive web.">
+  <meta property="og:title" content="Ruethaiwan Inta — Portfolio">
+  <meta property="og:description" content="From dream to code. Selected Front-End / UX/UI works.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+  <!-- BG Particles -->
+  <canvas id="bg-particles"></canvas>
+
+  <!-- BG Waves -->
+  <div class="bg-waves" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <h1 class="logo">Ruethaiwan<span>Dev</span></h1>
+
+    <nav>
+      <a href="#about" class="nav-link i18n-inline">
+        <span class="lang-th">เกี่ยวกับ</span>
+        <span class="lang-en">About</span>
+      </a>
+      <a href="#projects" class="nav-link i18n-inline">
+        <span class="lang-th">ผลงาน</span>
+        <span class="lang-en">Projects</span>
+      </a>
+      <a href="#contact" class="nav-link i18n-inline">
+        <span class="lang-th">ติดต่อ</span>
+        <span class="lang-en">Contact</span>
+      </a>
+    </nav>
+
+    <div class="lang-switch">
+      <input type="checkbox" id="langToggle"/>
+      <label for="langToggle" class="slider">
+        <span>TH</span>
+        <span>EN</span>
+        <div class="thumb"></div>
+      </label>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="orb"></div>
+
+    <div class="hero-inner">
+      <h2 class="i18n-inline">
+        <span class="lang-th">
+          สวัสดีค่ะ ฉันชื่อ ฤทัยวรรณ — <span class="role">อินทวงษ์</span>
+        </span>
+
+        <span class="lang-en">
+          Hi, I’m Ruethaiwan — <span class="role">Intawong</span>
+        </span>
+      </h2>
+
+      <p class="i18n">
+        <span class="lang-en">
+          “Once a kid who dreamed of becoming a programmer — sometimes scared, yet never stopped trying to turn her code into a real world.”
+        </span>
+        <span class="lang-th">
+          “เด็กคนหนึ่งที่เคยฝันอยากเป็นโปรแกรมเมอร์ อาจมีบางวันที่กลัว แต่ไม่เคยหยุดพยายามจะสร้างโลกจริงขึ้นมาด้วยโค้ดของตัวเอง.”
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about reveal">
+    <h2 class="i18n-inline">
+      <span class="lang-en">About</span>
+      <span class="lang-th">เกี่ยวกับฉัน</span>
+    </h2>
+
+    <div class="about-content">
+      <img src="img/image.jpg" class="profile-pic" alt="Ruethaiwan Inta"/>
+
+      <div class="about-text">
+        <div class="i18n">
+          <p class="lang-en">
+            My journey started with a simple curiosity — how a single web page comes to life. That curiosity grew into a passion for building Front-End experiences. Today, I keep improving every day, turning a childhood dream into meaningful work for real users.
+          </p>
+          <p class="lang-th">
+            อาชีพในวัยเด็กดูเท่มากในช่วงวัยนั้นแล้วก็มีความฝันที่จะเป็นโปรแกรมเมอร์ วันนี้ฉันยังพัฒนาอย่างต่อเนื่อง เพื่อเปลี่ยนความฝันวัยเด็กให้กลายเป็นผลงานที่มีความหมายกับผู้ใช้จริง
+          </p>
+        </div>
+
+        <p class="i18n-inline mbti">
+          <span class="lang-en"><strong>MBTI:</strong> INTJ</span>
+          <span class="lang-th"><strong>MBTI:</strong> INTJ</span>
+        </p>
+
+        
+
+        <section class="strengths-box lang-en">
+  <h4>Strengths</h4>
+      <ul>
+        <li>Structured, organized, and detail-oriented</li>
+        <li>High responsibility and consistency in work</li>
+        <li>Open to feedback and quick to adapt</li>
+        <li>Good teamwork and polite communication</li>
+        <li>Strong willingness to learn and improve continuously</li>
+      </ul>
+
+      <h4>Currently Improving</h4>
+      <ul>
+        <li>Building confidence in English</li>
+        <li>Managing pressure during challenging tasks</li>
+        <li>Starting tasks faster without overthinking</li>
+      </ul>
+</section>
+
+
+
+  <!-- TH -->
+  <section class="strengths-box lang-th">
+  <h4>จุดเด่นของฉัน</h4>
+
+ <ul>
+        <li>คิดเป็นระบบ ทำงานเป็นขั้นตอนชัดเจน</li>
+        <li>มีความรับผิดชอบสูงและเก็บรายละเอียดได้ดี</li>
+        <li>รับฟังความคิดเห็นและพร้อมปรับปรุงตัว</li>
+        <li>ทำงานร่วมกับคนอื่นได้ดี สื่อสารสุภาพ</li>
+        <li>ตั้งใจเรียนรู้ทักษะใหม่และพัฒนาตัวเองต่อเนื่อง</li>
+      </ul>
+
+      <h4>สิ่งที่กำลังพัฒนา</h4>
+      <ul>
+        <li>เพิ่มความมั่นใจด้านภาษาอังกฤษ</li>
+        <li>จัดการความกังวลเมื่อเจองานที่ท้าทาย</li>
+        <li>เริ่มงานให้ไวขึ้นและไม่คิดมากเกินไป</li>
+      </ul>
+</section>
+
+
+        <h2 class="i18n-inline">
+          <span class="lang-en">Education</span>
+          <span class="lang-th">การศึกษา</span>
+        </h2>
+
+        <div class="i18n resume">
+          <p class="lang-en">
+            Bangkok University — Multimedia & Entertainment Engineering (2025)<br>GPA 3.36 — Second-Class Honors
+          </p>
+          <p class="lang-th">
+            มหาวิทยาลัยกรุงเทพ — วิศวกรรมมัลติมีเดียและบันเทิง (2025)<br>เกรดเฉลี่ย 3.36 — เกียรตินิยมอันดับ 2
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills reveal">
+  <h2 class="i18n-inline">
+    <span class="lang-en">Skills</span>
+    <span class="lang-th">ทักษะ</span>
+  </h2>
+
+
+    <div class="skills-icons">
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftoffice.svg">
+    <span>Microsoft 365</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobepremierepro.svg">
+    <span>Premiere Pro</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/canva.svg">
+    <span>Canva</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/figma.svg">
+    <span>Figma</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/visualstudiocode.svg">
+    <span>VS Code</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg">
+    <span>HTML</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg">
+    <span>CSS</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg">
+    <span>JavaScript</span>
+  </div>
+
+  <div class="skill-icon">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg">
+    <span>Python</span>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects reveal">
+
+  <h2 class="i18n-inline">
+    <span class="lang-en">Projects</span>
+    <span class="lang-th">ผลงาน</span>
+  </h2>
+
+  <!-- ========== THAI MODE ========== -->
+  <div class="lang-th">
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>เว็บไซต์แนะนำตัวเองที่พัฒนาโดยใช้ HTML, CSS และ JavaScript</p>
+      <div class="tags">HTML · CSS · JavaScript</div>
+    </div>
+
+    <div class="card">
+      <h3>UX/UI InterArtive</h3>
+      <p>ออกแบบประสบการณ์ผู้ใช้แอปพลิเคชันเพื่อเชื่อมโยงคนทำงานด้าน Interactive Art 
+         พร้อมฟีเจอร์โปรโมทอุปกรณ์/ซอฟต์แวร์ และช่องทางขายตั๋วงานต่าง ๆ</p>
+      <p>เครื่องมือที่ใช้: Figma</p>
+      <a href="https://www.figma.com/proto/iI0eCYnv7Eb08t4OJa2zhd/Final-MI469-Deep?node-id=34-388&starting-point-node-id=34%3A388" target="_blank">ดูงานนี้</a>
+    </div>
+
+    <div class="card">
+      <h3>UX/UI Real-time campus tram tracking app</h3>
+      <p>ออกแบบประสบการณ์ผู้ใช้แอปพลิเคชันดูรถรางในมหาลัยแบบเรียลไทม์</p>
+      <p>เครื่องมือที่ใช้: Figma</p>
+      <a href="https://www.figma.com/design/xBuXyFIvLoSOa0EROOWljf/Deep" target="_blank">ดูงานนี้</a>
+    </div>
+
+    <div class="card">
+      <h3>กิจกรรม ผลงานที่ผ่านมา</h3>
+      <p>ผลงาน โอเพ้นเฮาท์แต่ละปี ฝึกงาน โปรเจกต์</p>
+      <p>เครื่องมือที่ใช้: touchdesigner · unity · premiere pro</p>
+      <a href="activities.html" target="_blank">ดูงานนี้</a>
+    </div>
+  </div>
+
+
+  <!-- ========== ENGLISH MODE ========== -->
+  <div class="lang-en">
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+      <div class="tags">HTML · CSS · JavaScript</div>
+    </div>
+
+    <div class="card">
+      <h3>UX/UI InterArtive</h3>
+      <p>Designed the user experience and interface for an application connecting 
+         creators in Interactive Art, including equipment promotion and ticket sales.</p>
+      <p>Tools: Figma</p>
+      <a href="https://www.figma.com/design/iI0eCYnv7Eb08t4OJa2zhd/Final-MI469-Deep?node-id=34-388" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>UX/UI Real-time campus tram tracking app</h3>
+      <p>Designed the UX/UI for a real-time campus tram tracking app.</p>
+      <p>Tools: Figma</p>
+      <a href="https://www.figma.com/design/xBuXyFIvLoSOa0EROOWljf/Deep" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>UX/UI Real-time campus tram tracking app</h3>
+      <p>Designed the UX/UI for a real-time campus tram tracking app.</p>
+      <p>Tools: Figma</p>
+      <a href="https://www.figma.com/design/xBuXyFIvLoSOa0EROOWljf/Deep" target="_blank">View Project</a>
+    </div>
+     
+    <div class="card">
+      <h3>UX/UI Real-time campus tram tracking app</h3>
+      <p>Designed the UX/UI for a real-time campus tram tracking app.</p>
+      <p>Tools: Figma</p>
+      <a href="https://www.figma.com/design/xBuXyFIvLoSOa0EROOWljf/Deep" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Past Projects & Activities</h3>
+      <p>Open House Works, Internship Experience, and Projects</p>
+      <p>Tools: touchdesigner · unity · premiere pro</p>
+      <a href="activities.html" target="_blank">View Project</a>
+    </div>
+  </div>
+
+</section>
+
+<section id="certificates" class="certificates reveal">
+
+  <h3 class="i18n-inline">
+    <span class="lang-en">Certificates & Awards</span>
+    <span class="lang-th">เกียรติบัตร & รางวัล</span>
+  </h3>
+
+  <div class="carousel">
+
+    <button class="arrow left">‹</button>
+
+    <div class="carousel-track-container">
+      <div class="carousel-track">
+
+        <!-- ใส่รูปได้ไม่จำกัด -->
+        <div class="slide"><img src="img/01.jpg"></div>
+        <div class="slide"><img src="img/05.jpg"></div>
+        <div class="slide"><img src="img/M.jpg"></div>
+        <div class="slide"><img src="img/02.png"></div>
+        <div class="slide"><img src="img/TPQI.jpg"></div>
+        <div class="slide"><img src="img/TPQI2.jpg"></div>
+        <div class="slide"><img src="img/eyJuYW1lIjoiUnVldGhhaXdhbiBJbnRhd29uZyIsImNvdXJzZSI6ImV4cHJlc3MtMjAyMSJ9.jpg"></div>
+        <div class="slide"><img src="img/Home.jpg"></div>
+        <div class="slide"><img src="img/03.jpg"></div>
+        <div class="slide"><img src="img/micro.jpg"></div>
+        <div class="slide"><img src="img/adobe.jpg"></div>
+        <div class="slide"><img src="img/Dance.jpg"></div>
+
+      </div>
+    </div>
+
+    <button class="arrow right">›</button>
+
+    <div class="carousel-nav"></div>
+
+  </div>
+
+</section>
+
+  </div>
+
+</section>
+
+    <!-- เพิ่มได้ไม่จำกัด -->
+    <!-- <div class="cert-item"><img src="images/cert4.jpg"></div> -->
+
+  </div>
+</section>
+
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer reveal">
+    <h2 class="i18n-inline">
+      <span class="lang-en">Contact</span>
+      <span class="lang-th">ติดต่อ</span>
+    </h2>
+
+    <div class="contact-info i18n">
+      <p class="lang-en">
+        <strong>Email:</strong> ruethaiwan.inta@gmail.com<br>
+        <strong>Phone:</strong> 095-962-1897<br>
+        <strong>Instagram:</strong> @e_a_n.g<br>
+        <strong>LINE ID:</strong> eang269<br>
+        <strong>Address:</strong> Chonburi, Thailand
+      </p>
+
+      <p class="lang-th">
+        <strong>อีเมล:</strong> ruethaiwan.inta@gmail.com<br>
+        <strong>โทร:</strong> 095-962-1897<br>
+        <strong>อินสตาแกรม:</strong> @e_a_n.g<br>
+        <strong>LINE ID:</strong> eang269<br>
+        <strong>ที่อยู่:</strong> จังหวัดชลบุรี
+      </p>
+    </div>
+
+    <div class="social-icons">
+      <a href="mailto:ruethaiwan.inta@gmail.com"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"></a>
+      <a href="https://www.instagram.com/e_a_n.g"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+      <a href="https://github.com/ruethaiwan-inta"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"></a>
+    </div>
+
+    <p class="copy">© 2025 Ruethaiwan Inta. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="toTop" class="to-top" aria-label="Back to top">
+    <svg width="22" height="22" viewBox="0 0 24 24">
+      <path d="M12 5v14M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
